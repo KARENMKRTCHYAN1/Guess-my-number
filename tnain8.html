@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="tnain8.css" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="homeBox1">
+        <p>logo</p>
+      </div>
+      <div class="homeButton">
+        <p>
+          <button class="homeMenu">menu</button>
+        </p>
+        <p>
+          <button class="homeconcat">Contact</button>
+          <div class="contactOverlay"></div>
+        </p>
+      </div>
+      <div id="homeText">
+        <p id="text1">monday - friday 10-23 | saturday 14-02</p>
+        <p id="text2">42 village St, New York</p>
+        <p id="text3">powered by</p>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+
+    <div id="menu" class="modal">
+      <div class="content">
+        <div class="container">
+          <span class="display">x</span>
+          <h1>Starters</h1>
+        </div>
+        <div class="a-container">
+          <h5>Tomato Soup <b>$2.50</b></h5>
+          <h5>Chicken Salad <b>$3.50</b></h5>
+          <h5>Bread and Butter <b>$1.00</b></h5>
+        </div>
+        <div class="b-container">
+          <h1>Main Courses</h1>
+        </div>
+        <div class="c-container">
+          <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+          <h5>Italian Pizza <b>$5.50</b></h5>
+          <h5>Veggie Pasta <b>$4.00</b></h5>
+          <h5>Chicken and Potatoes <b>$6.50</b></h5>
+          <h5>Deluxe Burger <b>$5.00</b></h5>
+        </div>
+        <div class="d-container">
+          <h1>Desserts</h1>
+        </div>
+        <div class="e-container">
+          <h5>Fruit Salad <b>$2.50</b></h5>
+          <h5>Ice cream <b>$2.00</b></h5>
+          <h5>Chocolate Cake <b>$4.00</b></h5>
+          <h5>Cheese <b>$5.50</b></h5>
+        </div>
+      </div>
+    </div>
+    <div id="contactModal" class="contactModal">
+      <div class="content">
+        <div class="overlay hidden"></div>
+        <span
+          onclick="document.getElementById('contactModal').style.display='none'"
+          class="display"
+        >
+          x
+        </span><div id="contactModal" class="modal">
+      </div>
+    </div>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+      <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+    </form>
+      </div>
+      
+
+    <script src="tnain8.js"></script>
+  </body>
+</html>
